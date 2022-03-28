@@ -135,6 +135,7 @@ body{
     display: flex;
 }
 
+
 .nav__list{
     grid-area: nav;
     display: flex;
@@ -174,6 +175,7 @@ main section .contenido img{
     margin: 5px;
     width: 300px;
     height: 250px;
+    
 }
 
 main section h2{
@@ -192,7 +194,18 @@ main section h2{
 
 .main img{
     border: 5px white solid;
+    height: 100px;
+    width: 100px;
+    transition: all 2s;
 }
+
+.main img:hover{
+    height: 300px;
+    width: 450px;
+    margin: 50px;
+
+}
+
 
 .contenido{
     display: flex;
@@ -233,6 +246,7 @@ main section h2{
     border: 2px solid red;
     background-image: radial-gradient(red, black);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem;
     margin: 1rem;
@@ -247,7 +261,7 @@ main section h2{
     
 }
 
-.redesFooter{
+.redesFooter li{
     display: flex;
     flex-direction: row;
 }
@@ -355,6 +369,10 @@ a{
     margin: 1rem;
 }
 
+.galeria img:hover{
+    border: solid white 5px;
+}
+
 /*  UBICACION */
 
 .section__ubicacion{
@@ -381,42 +399,198 @@ a{
 
 /*  INSTITUCIONAL */
 
-.header__institucional{
+.header{
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.titulo__institucional{
+.tituloInstitucional{
     color: white;
     margin: 2rem 0 2rem 0;
 }
 
-.parrafo__institucional{
+.parrafoInstitucional{
     color: white;
     margin: 2rem 0 2rem 0;
     font-style: italic;
     font-weight: bolder;
 }
 
-/* MOBILE */
-/* @media screen and (max-width: 580px) {
-   
+.autoridades{
+    color: wheat;
+    font-style: italic;
+    font-weight: bolder;
+}
 
-    .contenedor-galeria{
-        display: grid;
-        grid-template-columns: auto  ;
-        grid-template-rows: auto auto  auto auto auto auto auto auto;
-        grid-template-areas: 
-        "header"
-        "galeria"
-        "galeria"
-        "galeria"
-        "galeria"
-        "galeria"
-        "galeria"
-        "footer"
-        ;
+.mainInstitucional{
+    display: flex;
+    flex-direction: column;
+}
+
+.animate__animated{
+    color: white;
+}
+            /* MOBILE  */
+
+@media screen and (max-width: 580px) {
+
+    .header{
+        flex-direction: column;
+        
+    }
+
+    .nav__list{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .galeria{
+        flex-direction: column;
+        align-content: center;
+        
+    }
+
+    .galeria img{
+        width: 100%;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+        padding: 0px;
+        margin: 0px !important;
+    }
+
+    main section{
+        text-align: -webkit-center;
+    }
+
+    main section .contenido img{
+        margin: 5px;
+        width: 300px;
+        height: 250px;
+    
+    }
+
+    main section .contenido{
+        display: contents;
+        text-align: -webkit-center;
+    }
+
+    .main .section .div p{
+        text-align: center;
     }
 
 
+    .footer{
+        border: 2px solid red;
+        background-image: radial-gradient(red, black);
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+        margin: 3rem;
+        }
 
-    } */
+    .section__ubicacion{
+        display: flex;
+        display: contents;
+        }
+        
+
+    iframe{
+        width: 100%;
+        }
+
+
+
+    .form{
+        width: 100%;
+        padding: 0px;
+        margin: 3px;
+        }
+
+        }
+
+        /*  TABLET  */
+
+    @media screen and (max-width: 768px) {
+        .header{
+            flex-direction: column;
+            
+        }
+    
+        .nav__list{
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+        }
+    
+        .galeria{
+            flex-direction: column;
+            align-content: center;
+            
+        }
+    
+        .galeria img{
+            width: 100%;
+        }
+    
+        .main{
+            display: flex;
+            flex-direction: column; 
+            width: 100%;
+            padding: 0px;
+            margin: -18px;
+        }
+
+        main section{
+            text-align: -webkit-center;
+            margin: 1rem;
+        }
+    
+        main section .contenido img{
+            margin: 5px;
+            width: 300px;
+            height: 250px;
+        }
+    
+        main section .contenido{
+            display: contents;
+        }
+    
+        .main .section .div p{
+            text-align: center;
+        }
+    
+    
+        .footer{
+            border: 2px solid red;
+            background-image: radial-gradient(red, black);
+            display: flex;
+            flex-wrap: wrap;
+            padding: 1rem;
+            margin: 3rem;
+            }
+    
+        .section__ubicacion{
+            display: flex;
+            display: contents;
+            }
+            
+    
+        iframe{
+            width: 100%;
+            }
+    
+    
+    
+        .form{
+            width: 100%;
+            padding: 0px;
+            margin: 3px;
+            }
+
+
+
+}
