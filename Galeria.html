@@ -1,54 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagenes/Dx-mKd8-_400x400 (1).png" type="image/x-icon">
+
+    <link rel="stylesheet" href="estilos/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="./Estilos/estilos.css">
     <title>Galeria</title>
 </head>
+
 <body class="contenedor-galeria">
 
-    <header class="header">
+    <header class="header conteiner">
+        <div class="logo-container row col-sm-12 col-md-12">
 
-        <img class="imagenPrincipal" src="imagenes/ImagenClub2.png" alt="Logo Club Imperio Juniors" title="Logo Club Imperio Juniors">
+            <img class="imagenPrincipal" src="imagenes/ImagenClub2.png" alt="Logo Club Imperio Juniors"
+                title="Logo Club Imperio Juniors">
 
-        <nav class="navegacion">
-            <ul class="nav__list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="./Institucional.html">Institucional</a></li>
-                <li><a href="./Contacto.html">Contacto</a></li>
-                <li><a href="./Ubicacion.html">Ubicacion</a></li>
-                <li><a href="./Galeria.html">Galeria</a></li>
-            </ul>
-        </nav>
+            <nav class="nav nav-pills nav-justified col-lg-8">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="./Institucional.html">Institucional</a>
+                <a class="nav-link" href="./Contacto.html">Contacto</a>
+                <a class="nav-link" href="./Ubicacion.html">Ubicacion</a>
+                <a class="nav-link" href="./Galeria.html">Galeria</a>
+            </nav>
+        </div>
     </header>
 
-</header>
-
-<section class="galeria">
-    <img src="imagenes/EquipoRetro.jpg" alt="Equipo Retro" title="Equipo Retro">
-    <img src="imagenes/Pileta2.jpg.crdownload" alt="Pileta2" title="Pileta">
-    <img src="imagenes/PiletaImperio.jpg" alt="Pileta" title="Pileta2">
-    <img src="./imagenes/Club-Imperio_Adrian-F-Rosa.jpg" alt="">
-    <img src="./imagenes/ClubimperioCarral.jpg" alt="">
-    <img src="./imagenes/clubequipo.jpg" alt="">
-</section>
 
 
-
-
-
-<footer class="footer">
+    <section class="galeria conteiner">
+        
+            <div class="row">
+                <div class="col-xl-6 col-sm-12">
+                <img src="imagenes/EquipoRetro.jpg" alt="Equipo Retro" title="Equipo Retro">
+                <img src="imagenes/Pileta2.jpg.crdownload" alt="Pileta2" title="Pileta">
+                <img src="imagenes/PiletaImperio.jpg" alt="Pileta" title="Pileta2">
+            </div>
+            <div class="col-xl-6 col-sm-12">
+                <img src="./imagenes/Club-Imperio_Adrian-F-Rosa.jpg" alt="">
+                <img src="./imagenes/ClubimperioCarral.jpg" alt="">
+                <img src="./imagenes/clubequipo.jpg" alt="">
+            </div>
+            </div>
+    </section>
     
-    <h4 class="footer__titulo">Encontranos tambien en:</h4>
-    
+
+
+
+    <footer class="footer">
+
+        <h4 class="footer__titulo">Encontranos tambien en:</h4>
+
         <ul>
             <li><a href="https://www.instagram.com/clubimperiojuniors/" value="Instagram">Instagram</a></li>
             <li><a href="https://www.facebook.com/search/top?q=club%20imperio%20juniors">Facebook</a></li>
         </ul>
-</footer>
-    
+    </footer>
+
 </body>
+
 </html>
