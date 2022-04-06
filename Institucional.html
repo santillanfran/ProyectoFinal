@@ -1,67 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagenes/Dx-mKd8-_400x400 (1).png" type="image/x-icon">
+
+    <link rel="stylesheet" href="estilos/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="./Estilos/estilos.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Institucional</title>
 </head>
+
 <body>
 
-    <header class="header">
+    <header class="header conteiner">
+        <div class="logo-container row col-sm-12 col-md-12 col-lg-12">
 
-        <img class="imagenPrincipal" src="imagenes/ImagenClub2.png" alt="Logo Club Imperio Juniors" title="Logo Club Imperio Juniors">
+            <img class="imagenPrincipal" src="imagenes/ImagenClub2.png" alt="Logo Club Imperio Juniors"
+                title="Logo Club Imperio Juniors">
 
-        <nav class="navegacion">
-            <ul class="nav__list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="./Institucional.html">Institucional</a></li>
-                <li><a href="./Contacto.html">Contacto</a></li>
-                <li><a href="./Ubicacion.html">Ubicacion</a></li>
-                <li><a href="./Galeria.html">Galeria</a></li>
-            </ul>
-        </nav>
+            <nav class="nav nav-pills nav-justified col-lg-8">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="./Institucional.html">Institucional</a>
+                <a class="nav-link" href="./Contacto.html">Contacto</a>
+                <a class="nav-link" href="./Ubicacion.html">Ubicacion</a>
+                <a class="nav-link" href="./Galeria.html">Galeria</a>
+            </nav>
     </header>
-
-<main class="mainInstitucional">
-    <div>
-        <h2 class="animate__animated animate__pulse" class="tituloInstitucional">Historia</h2>
-            <p class="parrafoInstitucional">El club Imperio juniors fue fundado en el año 1935 en la ciudad de Buenos Aires, a partir de una idea de un grupo de padres, cuyo objetivo era crear una institucion para que los chicos del barrio Villa Santa Rita, puedan disfrutar de la disciplina que aman. Desde aquel entonces y hasta el dia de hoy, cientos de niños y niñas, pueden realizar un deporte que los identifique, ayude a crecer en un ambito sano y puedan crear nuevas relaciones de amistad.</p>
-    </div>
-        
-    <div>
-        <h2 class="animate__animated animate__pulse" class="tituloInstitucional">Nuestros Deportes</h2>
-        <p class="parrafoInstitucional">El deporte caracterisitico dentro de nuestra institucion, es el Basquet. Pero tambien cuenta con otras disciplinas como el Futbol, Natacion, Water-Polo, Gimnasia, Patin, entre otros. Todos nuestros deportes son para niños y niñas de todas las edades. Contamos con excelentes profesionales, formados en las mejores academias, convirtiendolos en profesores y profesoras de gran calidad profesional y humana.</p>
     </div>
 
-    <div>
-        <h2 class="animate__animated animate__pulse" class="tituloInstitucional">Autoridades</h2>
-        <ul class="autoridades">
-            <li>Presidente: Anibal Buzzallino</li>
-            <li>Vicepresidente: Juan Caldirola</li>
-            <li>Secretario General: Fernando Fernandez</li>
-            <li>Tesorero: Agustin Suarez</li>
-        </ul>
-    </div>
-
-</main>
+    <h1 class="tituloPage">Club Imperio Juniors</h1>
 
 
-<footer class="footer">
-    
-    <h4 class="footer__titulo">Encontranos tambien en:</h4>
-    
-        <ul>
-            <li><a href="https://www.instagram.com/clubimperiojuniors/" value="Instagram">Instagram</a></li>
-            <li><a href="https://www.facebook.com/search/top?q=club%20imperio%20juniors">Facebook</a></li>
-        </ul>
-</footer>
-    
+
+    <main class="mainInstitucional">
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="list-group listGroup" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active activeModif" id="list-home-list"
+                        data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Historia</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list"
+                        href="#list-profile" role="tab" aria-controls="list-profile">Nuestros Deportes</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list"
+                        href="#list-messages" role="tab" aria-controls="list-messages">Autoridades</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list"
+                        href="#list-settings" role="tab" aria-controls="list-settings">Objetivos</a>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="tab-content listContent" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                        aria-labelledby="list-home-list">El club Imperio juniors fue fundado en el año 1935 en la ciudad
+                        de Buenos
+                        Aires, a partir de una idea de un grupo de padres, cuyo objetivo era crear una institucion para
+                        que los
+                        chicos del barrio Villa Santa Rita, puedan disfrutar de la disciplina que aman. Desde aquel
+                        entonces y
+                        hasta el dia de hoy, cientos de niños y niñas, pueden realizar un deporte que los identifique,
+                        ayude a
+                        crecer en un ambito sano y puedan crear nuevas relaciones de amistad.</div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">El
+                        deporte caracterisitico dentro de nuestra institucion, es el Basquet.
+                        Pero tambien cuenta con otras disciplinas como el Futbol, Natacion, Water-Polo, Gimnasia, Patin,
+                        entre
+                        otros. Todos nuestros deportes son para niños y niñas de todas las edades. Contamos con
+                        excelentes
+                        profesionales, formados en las mejores academias, convirtiendolos en profesores y profesoras de
+                        gran
+                        calidad profesional y humana.</div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                        <p>
+                        <ul class="autoridades">
+                            <li>Presidente: Anibal Buzzallino</li>
+                            <li>Vicepresidente: Juan Caldirola</li>
+                            <li>Secretario General: Fernando Fernandez</li>
+                            <li>Tesorero: Agustin Suarez</li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                        Nuestro principal objetivo, es que nuestra institucion sea un espacio donde los chicos y chicas
+                        del club, puedan disfrutar de las actividades recreativas brindadas por el mismo. Trabajamos
+                        todos los dias para mejorar las instalaciones del club y poder asi, brindar una mejor
+                        experiencia para nuestros socios.</div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="row col-sm-12">
+            <h4 class="footer__titulo">Encontranos tambien en:</h4>
+
+            <ul>
+                <li><a href="https://www.instagram.com/clubimperiojuniors/" value="Instagram">Instagram</a></li>
+                <li><a href="https://www.facebook.com/search/top?q=club%20imperio%20juniors">Facebook</a></li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
+
 </html>
