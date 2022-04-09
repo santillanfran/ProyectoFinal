@@ -182,15 +182,24 @@ a {
     margin: 15px;
     padding: 15px;
     text-align: start;
-  /* height: 40px; */
     margin: 2rem 0 2rem 0;
     border-radius: 50px;
     background-color: white;
     display: inline-flex;
 }
 
-.legend select {
-    height: 40px;
+/* .legend{
+    display: contents;
+} */
+
+
+.btn{
+    font-weight: bold;
+    width: fit-content;
+}
+
+.btn:hover{
+    color:red;
 }
 
 .form {
@@ -212,19 +221,18 @@ a {
     align-items: center;
 }
 
-.form .input-container input {
-    margin-block: auto;
-}
 
 .fieldset {
     display: flex;
     margin: 5px;
     padding: 5px;
+    flex-direction: column;
 }
 
-.fieldset {
-    padding: 5px;
+.fieldset legend{
+    display: contents;
 }
+
 
 .textArea {
     display: flex;
@@ -232,10 +240,6 @@ a {
     margin: 5px;
 }
 
-.textArea input {
-  padding: 5px;
-  margin: 5px;
-}
 
 /*  GALERIA */
 
@@ -588,9 +592,6 @@ a {
     width: 100%;
 }
 
-.legend{
-    display: none;
-}
 
 
 .redes {
