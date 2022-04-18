@@ -41,3 +41,45 @@
   display: flex;
   padding: 5px;
   margin: 5px; }
+
+/*  Extend  */
+.main, .mainPrincipal, .mainSecundario {
+  grid-area: main;
+  margin: 15px;
+  padding: 15px;
+  display: contents;
+  color: white; }
+
+.mainPrincipal {
+  background-color: white;
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+.mainSecundario {
+  color: yellow;
+  font-weight: 50px; }
+
+/* mixin */
+.main, .mainPrincipal, .mainSecundario {
+  margin: 15px;
+  padding: 15px; }
+
+/* maps */
+.main, .mainPrincipal, .mainSecundario {
+  background-color: red; }
+
+.header {
+  background-color: black; }
+
+.section {
+  background-color: yellow; }
+
+.footer {
+  background-color: white; }
+
+/* map-get */
+main {
+  color: black;
+  font-size: 60px;
+  margin: 20px;
+  padding: 20px; }
