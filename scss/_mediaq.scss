@@ -1,0 +1,147 @@
+/* MOBILE  */
+
+@media screen and (max-width: 580px) {
+	.header {
+		flex-direction: column;
+		display: flex;
+		align-content: center;
+		flex-wrap: wrap;
+		.nav {
+			display: initial !important;
+		}
+	}
+	.listContent {
+		display: contents;
+	}
+	.galeria {
+		flex-direction: column;
+		align-content: center;
+		img {
+			width: 100%;
+		}
+	}
+	.main {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 0px;
+		margin: 0px !important;
+		.section {
+			.div {
+				p {
+					text-align: center;
+				}
+			}
+		}
+	}
+	main {
+		section {
+			text-align: -webkit-center;
+			.contenido {
+				img {
+					margin: 5px;
+					width: 300px;
+					height: 250px;
+				}
+				display: contents;
+				text-align: -webkit-center;
+			}
+		}
+	}
+	.footer {
+		border: 2px solid black;
+		background-image: radial-gradient(white, black);
+		display: flex;
+		flex-wrap: wrap;
+		padding: 1rem;
+		margin: 3rem;
+		border-radius: 50px;
+	}
+	.section__ubicacion {
+		display: flex;
+		display: contents;
+	}
+	iframe {
+		width: 100%;
+	}
+	.form {
+		width: 100%;
+		padding: 0px;
+		margin: 3px;
+	}
+}
+
+/*  TABLET  */
+
+@media screen and (max-width: 996px) {
+	.header {
+		img {
+			justify-content: center;
+		}
+		.nav {
+			display: inline-flex;
+			flex-direction: row;
+			align-content: center;
+		}
+	}
+	.logo-container {
+		place-content: center;
+	}
+	.galeria {
+		flex-direction: row;
+		align-content: center;
+		img {
+			width: 100%;
+		}
+	}
+	.main {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 0px;
+		margin: -18px;
+		background-color: darkgray;
+		.section {
+			.div {
+				p {
+					text-align: center;
+				}
+			}
+		}
+	}
+	main {
+		section {
+			text-align: -webkit-center;
+			margin: 1rem;
+			.contenido {
+				img {
+					margin: 5px;
+					width: 300px;
+					height: 250px;
+				}
+				display: contents;
+			}
+		}
+	}
+	.footer {
+		border: 2px solid black;
+		background-image: radial-gradient(white, black);
+		display: flex;
+		flex-wrap: wrap;
+		padding: 1rem;
+		margin: 3rem;
+		border-radius: 50px;
+	}
+	.section__ubicacion {
+		display: flex;
+		display: contents;
+	}
+	iframe {
+		width: 100%;
+	}
+	.form {
+		width: 100%;
+		padding: 0px;
+		margin: 3px;
+	}
+}
