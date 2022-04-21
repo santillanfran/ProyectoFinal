@@ -143,20 +143,16 @@ body {
 
 /* maps */
 .footer {
-  background-color: black;
   color: black; }
 
 .tituloFooter {
-  background-color: black;
   color: black; }
 
 .tituloInstitucional {
-  background-color: white;
   color: white; }
 
-.parrafoInstitucional {
-  background-color: white;
-  color: white; }
+.listContent {
+  color: black; }
 
 /* map-get */
 main {
