@@ -126,8 +126,18 @@ body {
     transform: rotate(180deg); }
 
 /*  Extend  */
+.main, .mainPrincipal {
+  grid-area: main;
+  margin: 15px;
+  padding: 15px;
+  display: contents;
+  color: white; }
+
+.mainPrincipal {
+  background-color: #e5e7e9; }
+
 /* mixin */
-.main {
+.main, .mainPrincipal {
   margin: 15px;
   padding: 15px; }
 
@@ -196,15 +206,14 @@ main {
   font-family: fantasy;
   font-size: 70px; }
 
-.main {
+.main, .mainPrincipal {
   grid-area: main;
   margin: 15px;
   padding: 15px;
   display: contents;
   color: white; }
-  .main img {
+  .main img, .mainPrincipal img {
     border: 5px white solid;
-    
     width: 100px; }
 
 main section .contenido {
@@ -392,13 +401,13 @@ a {
     align-content: center; }
     .galeria img {
       width: 100%; }
-  .main {
+  .main, .mainPrincipal {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 0px;
     margin: 0px !important; }
-    .main .section .div p {
+    .main .section .div p, .mainPrincipal .section .div p {
       text-align: center; }
   main section {
     text-align: -webkit-center; }
@@ -442,14 +451,14 @@ a {
     align-content: center; }
     .galeria img {
       width: 100%; }
-  .main {
+  .main, .mainPrincipal {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 0px;
     margin: -18px;
     background-color: darkgray; }
-    .main .section .div p {
+    .main .section .div p, .mainPrincipal .section .div p {
       text-align: center; }
   main section {
     text-align: -webkit-center;

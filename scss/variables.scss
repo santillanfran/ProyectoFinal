@@ -155,26 +155,19 @@ body {
 
 
 /*  Extend  */
-// .main {
-//     grid-area: main;
-//     margin: 15px;
-//     padding: 15px;
-//     display: contents;
-//     color: white;
-// }
+.main {
+    grid-area: main;
+    margin: 15px;
+    padding: 15px;
+    display: contents;
+    color: white;
+}
 
-// .mainPrincipal{
-//     @extend .main;
-//     background-color: white; 
-//     font-size: 15px;
-//     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-// }
+.mainPrincipal{
+    @extend .main;
+    background-color: #e5e7e9;
+}
 
-// .mainSecundario{
-//     @extend .main;
-//     color: yellow;
-//     font-weight: 50px;
-// }
 
 /* mixin */
 
